@@ -5,7 +5,7 @@ COLORS=1
 TEXT=""
 for file in "$directory"/*; do
   temp=$(/bin/bash $file)
-  TEXT=$(echo -e "$TEXT\n$temp")
+  TEXT=$(echo -e "$TEXT$temp")
 done
 
 #echo "$TEXT" | /home/$SUDO_USER/.local/bin/tte --no-color matrix --rain-time 2 --rain-fall-delay-range 1-2 --resolve-delay 1 --rain-color-gradient 92be92 185318

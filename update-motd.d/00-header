@@ -22,13 +22,14 @@
 [ -r /etc/lsb-release ] && . /etc/lsb-release
 
 if [ -z "$DISTRIB_DESCRIPTION" ] && [ -x /usr/bin/lsb_release ]; then
-	# Fall back to using the very slow lsb_release utility
-	DISTRIB_DESCRIPTION=$(lsb_release -s -d)
+  # Fall back to using the very slow lsb_release utility
+  DISTRIB_DESCRIPTION=$(lsb_release -s -d)
 fi
 
 BLUE='\033[0;34m'
 NS='\033[0m' # No Color
 BOLD='\033[1m'
+HOST=$(hostname -f | tr '[:lower:]' '[:upper:]')
 
-printf "${BLUE}CENTERPOINT${NS} -- %s (%s %s %s)\n" "$DISTRIB_DESCRIPTION" "$(uname -o)" "$(uname -r)" "$(uname -m)"
+printf "${BLUE}${HOST}${NS} -- %s (%s %s %s)\n" "$DISTRIB_DESCRIPTION" "$(uname -o)" "$(uname -r)" "$(uname -m)"
 printf "Bidding you a good ${BOLD}%s${NS}\n" $(date +'%A')

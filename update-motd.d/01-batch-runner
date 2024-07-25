@@ -8,9 +8,9 @@ for file in "$directory"/*; do
   TEXT=$(echo -e "$TEXT\n$temp")
 done
 
-#echo "$TEXT" | /home/mehul/.local/bin/tte --no-color matrix --rain-time 2 --rain-fall-delay-range 1-2 --resolve-delay 1 --rain-color-gradient 92be92 185318
-#echo "$TEXT" | /home/mehul/.local/bin/tte --no-color middleout --expand-direction vertical --center-movement-speed 0.35 --full-movement-speed 0.35 --center-easing IN_OUT_SINE --full-easing IN_OUT_SINE
-echo "$TEXT" | /home/mehul/.local/bin/tte --no-color print --print-speed 30 --print-head-return-speed 4
-#echo "$TEXT" | /home/mehul/.local/bin/tte --no-color orbittingvolley --final-gradient-stops 4c67fd 7341ec --launcher-movement-speed 1.5 --character-movement-speed 3 --launch-delay 1 --character-easing OUT_SINE
-#echo "$TEXT" | /home/mehul/.local/bin/tte --no-color print --print-head-return-speed 3 --print-speed 10 --print-head-easing IN_OUT_QUAD
-#echo "$TEXT" | /home/mehul/.local/bin/tte --no-color rain --rain-symbols o . , "*" "|" --rain-colors 00315C 004C8F 0075DB 3F91D9 78B9F2 9AC8F5 B8D8F8 E3EFFC --final-gradient-stops 219de1 7a44fe --final-gradient-steps 12 --movement-speed 0.1-0.2
+#echo "$TEXT" | /home/$SUDO_USER/.local/bin/tte --no-color matrix --rain-time 2 --rain-fall-delay-range 1-2 --resolve-delay 1 --rain-color-gradient 92be92 185318
+#echo "$TEXT" | /home/$SUDO_USER/.local/bin/tte --no-color middleout --expand-direction vertical --center-movement-speed 0.35 --full-movement-speed 0.35 --center-easing IN_OUT_SINE --full-easing IN_OUT_SINE
+echo "$TEXT" | /home/$SUDO_USER/.local/bin/tte --no-color print --print-speed 30 --print-head-return-speed 4
+#echo "$TEXT" | /home/$SUDO_USER/.local/bin/tte --no-color orbittingvolley --final-gradient-stops 4c67fd 7341ec --launcher-movement-speed 1.5 --character-movement-speed 3 --launch-delay 1 --character-easing OUT_SINE
+#echo "$TEXT" | /home/$SUDO_USER/.local/bin/tte --no-color print --print-head-return-speed 3 --print-speed 10 --print-head-easing IN_OUT_QUAD
+#echo "$TEXT" | /home/$SUDO_USER/.local/bin/tte --no-color rain --rain-symbols o . , "*" "|" --rain-colors 00315C 004C8F 0075DB 3F91D9 78B9F2 9AC8F5 B8D8F8 E3EFFC --final-gradient-stops 219de1 7a44fe --final-gradient-steps 12 --movement-speed 0.1-0.2

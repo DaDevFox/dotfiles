@@ -7,3 +7,6 @@
 [submodule "tmux/.config/tmux/plugins/tmux"]
 	path = tmux/.config/tmux/plugins/tmux
 	url = https://git::@github.com/catppuccin/tmux
+[submodule "tmux/tmux/.tmux/plugins/tpm"]
+	path = tmux/tmux/.tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm

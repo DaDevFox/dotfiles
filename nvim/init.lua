@@ -3,7 +3,7 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 
--- OPTION 2
+-- OPTION 2 (Windows specific)
 
 -- vim.cmd("set runtimepath^=~/AppData/Local/nvim-data/lazy/dashboard-nvim")
 -- require("dashboard").setup({})

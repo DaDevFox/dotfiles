@@ -55,3 +55,17 @@ require("lazy").setup({
     },
   },
 })
+
+-- -- TODO: template for windows
+require("nvim-treesitter.install").compilers = { "zig" }
+-- require("nvim-treesitter.install").compilers = { "zig", "gcc", "cc", "cl", "clang" }
+-- require("nvim-treesitter.configs").set_logger({
+-- enable = true,
+--   level = "debug",
+-- })
+
+require("nvim-treesitter.configs").setup({
+  sync_install = true, -- Install synchronously
+  auto_install = true, -- Auto-install missing parsers
+  highlight = { enable = true },
+})
